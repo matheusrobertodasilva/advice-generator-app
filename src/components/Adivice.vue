@@ -23,18 +23,6 @@
             }
         },
         methods:{
-            // gerarConselho(){
-            //     const conselhos = 'https://api.adviceslip.com/advice';
-            //     let id = ""
-            //     fetch(conselhos)
-            //     .then(resp => resp.json())
-            //     .then(dados => {
-            //         this.id = dados.slip.id;
-            //         this.conselho = dados.slip.advice;
-            //     }) . catch(error => {
-            //         console.error("algo de errado não esta certo")
-            //     })
-            // }
             async gerarConselho(){
                 const response = await fetch('https://api.adviceslip.com/advice')
                 const conselho = await response.json()
