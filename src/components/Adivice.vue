@@ -1,14 +1,12 @@
 <template>
     <section>
-        <div class="bg-Dark-Grayish-Blue rounded-lg p-5 m-5 space-y-5 flex flex-col justify-center items-center ">
-            <h2 class="text-center text-Neon-Green font-semibold text-[14px] tracking-[.2rem] uppercase">advice #{{ id }}</h2>
+        <div class="bg-Dark-Grayish-Blue rounded-lg p-5 m-5 flex flex-col justify-center items-center">
+            <h2 class="text-center text-Neon-Green font-semibold text-[14px] tracking-[.2rem] uppercase mb-8">advice #{{ id }}</h2>
             <h1 class="text-center font-extrabold text-[24px] lg:w-[18vw]">"{{ conselho }}"</h1>
-            <img src="/src/assets/images/pattern-divider-mobile.svg" alt="" class="">
-            <div class="bg-Neon-Green rounded-full p-4 hover:shadow-[0px_0px_20px_1px] hover:shadow-Neon-Green ">
-                <button @click="gerarConselho" class="flex justify-center items-center  ">
-                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
-                </button>
-            </div>
+            <img src="/src/assets/images/pattern-divider-mobile.svg" alt="" class="mt-8">
+            <button @click="gerarConselho" class="flex justify-center items-center relative translate-y-[90%] m-0 bg-Neon-Green rounded-full p-4 hover:shadow-[0px_0px_20px_1px] hover:shadow-Neon-Green ">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
+            </button>
         </div>
     </section>
     
